@@ -6,8 +6,8 @@ Repository ini menggunakan strategi *branching* untuk memisahkan setiap pengerja
 
 | Nama Branch | Keterangan |
 |-------------|------------|
-| `master` | Berisi **Tugas 1** (Dokumentasi & Screenshot Hasil Tugas 1). |
-| `Tugas2` | Berisi **Tugas 2** (Source Code Implementasi Laravel / `booksales-api`). |
+| `master` | Berisi **Tugas 1**. |
+| `Tugas2` | Berisi **Tugas 2**. |
 
 > ⚠️ **Catatan Penting:** 
 > - Folder `Hasil Tugas 1` hanya ada di branch `master`.
