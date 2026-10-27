@@ -1,5 +1,19 @@
 # 📚 Book Sales - Sistem Informasi Penjualan Buku
 
+## 🌿 Informasi Branch
+
+Repository ini menggunakan strategi *branching* untuk memisahkan setiap pengerjaan tugas agar lebih rapi dan terorganisir:
+
+| Nama Branch | Keterangan |
+|-------------|------------|
+| `master` | Berisi **Tugas 1** (Dokumentasi & Screenshot Hasil Tugas 1). |
+| `Tugas2` | Berisi **Tugas 2** (Source Code Implementasi Laravel / `booksales-api`). |
+
+> ⚠️ **Catatan Penting:** 
+> - Folder `Hasil Tugas 1` hanya ada di branch `master`.
+
+---
+
 Sistem Informasi Penjualan Buku adalah aplikasi web berbasis **Laravel** yang bertujuan untuk mengelola toko buku secara efisien dan terintegrasi. Aplikasi ini mempermudah pengelolaan koleksi buku, penulis, genre, pengguna, serta transaksi penjualan.
 
 Proyek ini dikembangkan sebagai bagian dari pembelajaran konsep basis data, analisis kebutuhan pengguna, pengembangan aplikasi web dengan framework modern, implementasi keamanan, serta penerapan teknologi terkini dalam pengembangan aplikasi web.
@@ -35,18 +49,6 @@ Proyek ini dikembangkan sebagai bagian dari pembelajaran konsep basis data, anal
 - 👥 Mengelola akun-akun pengguna
 
 ---
-
-## 🌿 Informasi Branch
-
-Repository ini menggunakan strategi *branching* untuk memisahkan setiap pengerjaan tugas agar lebih rapi dan terorganisir:
-
-| Nama Branch | Keterangan |
-|-------------|------------|
-| `master` | Berisi **Tugas 1** (Dokumentasi & Screenshot Hasil Tugas 1). |
-| `Tugas2` | Berisi **Tugas 2** (Source Code Implementasi Laravel / `booksales-api`). |
-
-> ⚠️ **Catatan Penting:** 
-> - Folder `Hasil Tugas 1` hanya ada di branch `master`. 
 
 **Cara berpindah branch:**
 ```bash
