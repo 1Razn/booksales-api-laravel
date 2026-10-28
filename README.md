@@ -8,6 +8,7 @@ Repository ini menggunakan strategi *branching* untuk memisahkan setiap pengerja
 |-------------|------------|
 | `master` | Berisi **Tugas 1**. |
 | `Tugas2` | Berisi **Tugas 2**. |
+| `Tugas3` | Berisi **Tugas 3**. |
 
 > ⚠️ **Catatan Penting:** 
 > - Folder `Hasil Tugas 1` hanya ada di branch `master`.
