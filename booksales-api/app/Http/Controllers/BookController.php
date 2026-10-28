@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Books;
 
+use function PEST\Laravel\json;
+
 class BookController extends Controller
 {
     /**
@@ -13,7 +15,12 @@ class BookController extends Controller
     public function index()
     {
         $books = Books::all();
-        return view('book',  compact('books'));
+
+        return response()->json([
+          "success" => true,
+          "message" => "Get All Resources",
+          "data" => $books
+        ], 200);
     }
 
     /**
