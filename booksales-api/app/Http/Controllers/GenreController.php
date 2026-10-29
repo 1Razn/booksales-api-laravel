@@ -19,4 +19,25 @@ class GenreController extends Controller
       "data" => $genres
     ], 200);
   }
+
+  public function store(Request $request)
+  {
+    //Validasi
+    $request->validate([
+      'name' => 'required|string|max:255',
+      'description' => 'required|string',
+    ]);
+
+    //Simpan
+    Genre::create([
+      'name' => $request->name,
+      'description' => $request->description
+    ]);
+
+    //Response
+    return response()->json([
+      "success" => true,
+      "message" => "Data Berhasil Disimpan",
+    ], 201);
+  }
 }
