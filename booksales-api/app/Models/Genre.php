@@ -11,6 +11,7 @@ class Genre extends Model
     'description',
   ];
 
+  //Relasi ke Books
   public function books()
   {
     return $this->hasMany(Books::class);

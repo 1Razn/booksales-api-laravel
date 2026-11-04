@@ -8,34 +8,40 @@ use Tymon\JWTAuth\Contracts\JWTSubject;
 
 class User extends Authenticatable implements JWTSubject
 {
-    use Notifiable;
+  use Notifiable;
 
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'role',
-        'last_access',
+  protected $fillable = [
+    'name',
+    'email',
+    'password',
+    'role',
+    'last_access',
+  ];
+
+  protected $hidden = [
+    'password',
+  ];
+
+  protected $casts = [
+    'password' => 'hashed',
+  ];
+
+  // Method yang diperlukan oleh JWT
+  public function getJWTIdentifier()
+  {
+    return $this->getKey();
+  }
+
+  public function getJWTCustomClaims()
+  {
+    return [
+      'role' => $this->role,
     ];
+  }
 
-    protected $hidden = [
-        'password',
-    ];
-
-    protected $casts = [
-        'password' => 'hashed',
-    ];
-
-    // Method yang diperlukan oleh JWT
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
-    }
-
-    public function getJWTCustomClaims()
-    {
-        return [
-            'role' => $this->role,
-        ];
-    }
+  //Relasi ke Transaction
+  public function transactions()
+  {
+    return $this->hasMany(Transaction::class, 'customer_id');
+  }
 }

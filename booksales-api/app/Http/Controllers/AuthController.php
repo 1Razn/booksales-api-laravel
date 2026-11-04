@@ -18,7 +18,7 @@ class AuthController extends Controller
 
     $credentials = $request->only('email', 'password');
 
-    // Coba generate token menggunakan JWTAuth
+    //Coba generate token menggunakan JWTAuth
     if (!$token = JWTAuth::attempt($credentials)) {
       return response()->json([
         'success' => false,
