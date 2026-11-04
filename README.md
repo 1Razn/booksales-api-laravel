@@ -12,6 +12,7 @@ Repository ini menggunakan strategi *branching* untuk memisahkan setiap pengerja
 | `Tugas4` | Berisi **Tugas 4**. |
 | `Tugas5` | Berisi **Tugas 5**. |
 | `Tugas6` | Berisi **Tugas 6**. |
+| `Tugas7` | Berisi **Tugas 7**. |
 
 > ⚠️ **Catatan Penting:** 
 > - `Tugas 1` hanya ada di branch `master`.
